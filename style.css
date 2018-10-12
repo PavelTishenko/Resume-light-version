@@ -141,7 +141,7 @@ section#page-header{
   height: 100vh;/* vh is 'viewprot height'*/
   width: 100%;
   background: #ccc url(images/1.jpeg) no-repeat center center;
-  background-size: cover;
+  background-size: auto;
   color: #000;
   display: table;
 }
@@ -168,11 +168,11 @@ section#page-header header h2{
 /* section page-content */
 section.page-content div{
   width: 85%;
-  max-width: 1024px;
   margin: 3em auto;
   padding-top: 4em;
   background: url('images/7.png') no-repeat top center;
-  background-size: cover;
+  height: auto;
+  background-size: auto;
   text-align: center;
   list-style: none;
 }
@@ -212,3 +212,7 @@ ul.skils-list li{
   text-align: center;
   /* background: url('images/2.png') no-repeat top center; */
 }
+
+@media all and (max-width:240px){
+  padding: 4px;
+} 
